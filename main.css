@@ -1,0 +1,158 @@
+:root {
+  --text-color: #2e2e2e;
+  --point-color: #FF62AD;
+  --hover-color: #FFF8FA;
+  --input-color: #F9F9F9;
+  --input-text-color: #818087;
+  --line-color: #C8C8C8;
+  --hover-extra-color: #66002F;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  color: var(--text-color);
+}
+li {
+  list-style: none;
+}
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 65px;
+}
+.item-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 15%;
+}
+.logo {
+  width: 8rem;
+  cursor: pointer;
+}
+.menu {
+  gap: 30px;
+}
+.menu > li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px 18px 15px 12px;
+}
+.menu > li:hover {
+  color: var(--point-color);
+}
+.menu > li > span {
+  font-size: 1.8em;
+}
+.item-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+  border-left: 1px solid var(--line-color);
+  border-right: 1px solid var(--line-color);
+  padding-top: 30px;
+  gap: 15px;
+}
+.item-main > header > img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.item-main > header > span {
+  font-size: 2.5em;
+  color: var(--point-color);
+}
+.item-main > header > .search > span {
+  font-size: 2.5em;
+  color: var(--point-color);
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.search > input {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  background-color: var(--input-color);
+}
+.ad {
+  width: 85%;
+}
+.city {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.city > li {
+  padding: 15px 28px;
+  border: 1px solid var(--line-color);
+  border-radius: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.city > li:hover {
+  background-color: var(--hover-extra-color);
+  color: #fff;
+}
+.item-rank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 18%;
+  gap: 20px;
+  padding: 30px 10px 0 10px;
+}
+.item-rank > .title {
+  font-size: 1.6em;
+  font-weight: 900;
+  background-color: var(--input-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+.rank {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  align-self: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  cursor: pointer;
+}
+.rank:hover {
+  background-color: var(--hover-color);
+  border-radius: 8px;
+}
+.rank > h1 {
+  color: var(--point-color);
+  font-size:2.8em;
+  font-weight: 900;
+}
+.detail > h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.detail > p {
+  font-size: 0.8em;
+  color: var(--input-text-color);
+}
